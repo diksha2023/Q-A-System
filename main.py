@@ -6,7 +6,8 @@ btn = st.button("Create Knowledgebase")
 
 
 if btn:
-    pass
+    create_vector_db()
+    
 question = st.text_input("Question: ")
 
 if question:
