@@ -65,18 +65,6 @@ User question ──► Retriever (top-k = 3 similarity) ┘
 └── .env                  # Your API key (not committed)
 ```
 
-## Prerequisites
-
-- Python 3.10+ (developed on Python 3.12)
-- A Google Gemini API key — get one from [Google AI Studio](https://aistudio.google.com/)
-## Files
-
-- `main.py`: the Streamlit app
-- `langchain_helper.py`: builds the vector index and sets up the QA chain
-- `Q&A_System.ipynb`: the notebook where I worked through the pipeline step by step
-- `requirements.txt`: dependencies (needs cleanup, see below)
-- `codebasics_faqs.csv`: the FAQ data. It isn't included in this repo, so add your own with `prompt` and `response` columns.
-
 ## Setup
 
 You'll need Python 3.10 or newer (I used 3.12) and a Gemini API key from [Google AI Studio](https://aistudio.google.com/).
@@ -120,6 +108,16 @@ streamlit run main.py
 - Now you are ready to ask questions. Type your question in Question box and hit Enter
 
 It opens at [http://localhost:8501](http://localhost:8501). You can also test the chain without the UI by running `python langchain_helper.py`, which fires off a sample question.
+
+
+## Files
+
+- `main.py`: the Streamlit app
+- `langchain_helper.py`: builds the vector index and sets up the QA chain
+- `Q&A_System.ipynb`: the notebook where I worked through the pipeline step by step
+- `requirements.txt`: dependencies (needs cleanup, see below)
+- `codebasics_faqs.csv`: the FAQ data. It isn't included in this repo, so add your own with `prompt` and `response` columns.
+
 
 ## Sample Questions
   - Do you guys provide internship and also do you offer EMI payments?
